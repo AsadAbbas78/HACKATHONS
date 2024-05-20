@@ -15,7 +15,7 @@ const Navber = () => {
         </div></Link>
  <div className="hidden lg:flex justify-center items-center w-full gap-12">
         <div>
-          <ul className="flex font-medium text-lg lg:space-x-3">
+          <ul className="flex font-medium text-lg space-x-3">
             {NavberArray.map((item: NavberItemType, index: number) => (
               <li key={index}>
                 <Link href={item.href}>{item.label}</Link>
