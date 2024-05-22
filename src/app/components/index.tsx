@@ -10,7 +10,7 @@ const Navber = () => {
   return (
     <main>
        
-      <div className=" flex py-6  items-center justify-around ">
+      <div className=" flex py-6  items-center justify-between">
         <Link href={""}>
           <div className="w-36">
             <Image src={require("../../../public/images/Logo.webp")} alt="" />
