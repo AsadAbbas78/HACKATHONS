@@ -4,12 +4,11 @@ import { NavberArray, NavberItemType } from "./utils/NavberArrayAndTypes";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
-import { RxHamburgerMenu } from "react-icons/rx";
+import MobileNavbar from "./MobileNavbar";
 
 const Navber = () => {
   return (
     <main>
-       
       <div className=" flex py-6  items-center justify-between">
         <Link href={""}>
           <div className="w-36">
@@ -46,13 +45,11 @@ const Navber = () => {
             </div>
           </Link>
         </div>
-        <div className="flex lg:hidden ">
-      <RxHamburgerMenu />
-      </div>
-      </div>
-  
 
-      
+        <div>
+          <MobileNavbar />
+        </div>
+      </div>
     </main>
   );
 };
