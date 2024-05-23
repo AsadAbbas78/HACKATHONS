@@ -9,19 +9,21 @@ const MobileNavbar = () => {
   return (
     <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
       {isNavbarOpen ? (
-         
-        
-        <div  className="flex lg:hidden ">
-          <RxCross2 className="text-xl font-semibold"/>
-          
+        <div className="flex lg:hidden ">
+          <RxCross2 className="text-xl font-semibold" />
         </div>
-        
-        
       ) : (
         <div className="flex lg:hidden">
-          <RxHamburgerMenu className="text-xl font-semibold"/>
+          <RxHamburgerMenu className="text-xl font-semibold" />
         </div>
+        
       )}
+
+      {
+
+    isNavbarOpen && <div className="">hi</div>
+
+      }
     </div>
   );
 };
