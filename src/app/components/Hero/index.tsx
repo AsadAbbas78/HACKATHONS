@@ -5,10 +5,10 @@ import { LuShoppingCart } from "react-icons/lu";
 const Hero = () => {
   return (
     <main>
-      <div className="flex  justify-between items-center ">
+      <div className="flex  justify-between items-center py-5 ">
         {/* left side */}
         <div className=" space-y-12 ">
-          <button className="bg-[#e1edff] text-[#1f01ff] font-bold px-6 py-3  font-sans rounded">
+          <button className="bg-[#e1edff] text-[#1f01ff] font-bold px-6 py-3 text-1xl font-serif rounded">
             Sale 70%
           </button>
 
@@ -20,15 +20,50 @@ const Hero = () => {
             as you wear Dine outfits.
           </p>
 
-          <button className=" flex bg-[#212121] text-white items-center px-6 py-3 gap-2">
-            <LuShoppingCart />
+          <button className=" flex bg-[#212121] text-white items-center px-10 py-4 gap-2 font-bold text-1xl">
+            <LuShoppingCart className="font-bold text-1xl" />
             <h1>Start Shopping</h1>
           </button>
+          <br />
+          <div className="gap-10 flex  ">
+            <div className="w-12 md:w-24">
+              <Image
+                width={100}
+                height={100}
+                src={require("../../../../public/images/Logo Bazaar.webp")}
+                alt=""
+              />
+            </div>
+            <div className="w-12 md:w-24">
+              <Image
+                width={100}
+                height={100}
+                src={require("../../../../public/images/Logo Buster.webp")}
+                alt=""
+              />
+            </div>
+            <div className="w-12 md:w-24">
+              <Image
+                width={100}
+                height={100}
+                src={require("../../../../public/images/Logo Instyle.webp")}
+                alt=""
+              />
+            </div>
+            <div className="w-12 md:w-24">
+              <Image
+                width={100}
+                height={100}
+                src={require("../../../../public/images/Logo Versace.webp")}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
 
         {/* right side */}
 
-        <div className=" hidden md:flex bg-primarywhite rounded-full ">
+        <div className="  hidden lg:flex bg-primarywhite rounded-full ">
           <Image
             src={require("../../../../public/images/hacka2.webp")}
             alt=""

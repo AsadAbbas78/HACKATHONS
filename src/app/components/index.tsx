@@ -12,7 +12,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navber = () => {
   const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
-    <main>
+    <main className="">
       <div className=" flex py-6  items-center justify-between">
         <Link href={""}>
           <div className="w-36">
