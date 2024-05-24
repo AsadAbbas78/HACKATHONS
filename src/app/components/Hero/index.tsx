@@ -7,7 +7,7 @@ const Hero = () => {
     <main>
       <div className="flex  justify-between items-center ">
         {/* left side */}
-        <div className=" space-y-12">
+        <div className=" space-y-12 ">
           <button className="bg-[#e1edff] text-[#1f01ff] font-bold px-6 py-3  font-sans rounded">
             Sale 70%
           </button>
@@ -28,7 +28,7 @@ const Hero = () => {
 
         {/* right side */}
 
-        <div className="bg-primarywhite rounded-full ">
+        <div className=" hidden md:flex bg-primarywhite rounded-full ">
           <Image
             src={require("../../../../public/images/hacka2.webp")}
             alt=""
