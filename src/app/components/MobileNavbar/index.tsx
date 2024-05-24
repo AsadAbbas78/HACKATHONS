@@ -1,30 +1,29 @@
-"use client";
-import { RxCross2 } from "react-icons/rx";
-import { RxHamburgerMenu } from "react-icons/rx";
-import React, { useState } from "react";
 import Link from "next/link";
+import { NavberArray,NavberItemType } from "../utils/NavberArrayAndTypes";
 
 const MobileNavbar = () => {
-  const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
+ 
   return (
-    <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
-      {isNavbarOpen ? (
-        <div className="flex lg:hidden ">
-          <RxCross2 className="text-xl font-semibold" />
-        </div>
-      ) : (
-        <div className="flex lg:hidden">
-          <RxHamburgerMenu className="text-xl font-semibold" />
-        </div>
-        
-      )}
+  <main>
 
-      {
+<div className="w-full text-center mt-36">
 
-    isNavbarOpen && <div className="">hi</div>
 
-      }
-    </div>
+{
+  NavberArray.map((item: NavberItemType,  index:number )=>(
+
+    <li key={index} className=" lg:hidden list-none mt-6"> 
+    <Link href={item.href}> {item.label }</Link>
+    
+    </li>
+  ) )
+}
+
+
+
+</div>
+
+  </main>
   );
 };
 

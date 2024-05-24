@@ -1,12 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { NavberArray, NavberItemType } from "./utils/NavberArrayAndTypes";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import MobileNavbar from "./MobileNavbar";
+import { RxCross2 } from "react-icons/rx";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navber = () => {
+  const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
     <main>
       <div className=" flex py-6  items-center justify-between">
@@ -31,15 +35,15 @@ const Navber = () => {
             <CiSearch />
             <input
               type="text"
-              className="text-sm w-[400px] h-6 pl-2 "
+              className=" outline-none text-sm w-[400px] h-6 pl-2 "
               placeholder="What you looking for"
             />
           </div>
 
           <Link href={""}>
-            <div className=" flex h-12 w-12 relative bg-gray-300 rounded-full flex items-center justify-center">
+            <div className="  h-12 w-12 relative bg-gray-300 rounded-full flex items-center justify-center">
               <div className="absolute left-7 bottom-6 bg-red-400 h-5 w-5 rounded-full flex items-center justify-center ">
-                3
+                0
               </div>
               <FiShoppingCart size={20} />
             </div>
@@ -47,9 +51,20 @@ const Navber = () => {
         </div>
 
         <div>
-          <MobileNavbar />
+          <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
+            {isNavbarOpen ? (
+              <div className="flex lg:hidden ">
+                <RxCross2 className="text-xl font-bold" />
+              </div>
+            ) : (
+              <div className="flex lg:hidden">
+                <RxHamburgerMenu className="text-xl font-bold" />
+              </div>
+            )}
+          </div>
         </div>
       </div>
+      {isNavbarOpen && <MobileNavbar />}
     </main>
   );
 };
