@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className="font-bold text-6xl">
             An Industrial Take <br /> on Streetwear
           </h1>
-          <p>
+          <p className="text-1xl">
             Anyone can beat you but no one can beat your outfit as <br /> long
             as you wear Dine outfits.
           </p>
@@ -25,7 +25,7 @@ const Hero = () => {
             <h1>Start Shopping</h1>
           </button>
           <br />
-          <div className="gap-10 flex  ">
+          <div className=" flex gap-14">
             <div className="w-12 md:w-24">
               <Image
                 width={100}

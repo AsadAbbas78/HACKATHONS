@@ -9,7 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-      primarywhite:"#fbece2"
+      primarywhite:"#fbece2",
+      cart:"#d6d6d8",
+      cart2:"#212121",
+      cart3:"#efe1c7",
+      cart4:"#d7d7d9",
+      
 
       },
     },

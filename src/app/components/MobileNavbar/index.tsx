@@ -6,13 +6,13 @@ const MobileNavbar = () => {
   return (
   <main>
 
-<div className="w-full text-center mt-36">
+<div className="w-full text-center p-36">
 
 
 {
   NavberArray.map((item: NavberItemType,  index:number )=>(
 
-    <li key={index} className=" lg:hidden list-none mt-6"> 
+    <li key={index} className=" lg:hidden list-none mt-3"> 
     <Link href={item.href}> {item.label }</Link>
     
     </li>
