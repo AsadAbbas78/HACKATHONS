@@ -12,7 +12,7 @@ const Producttype = () => {
       <main>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-800 ">
 
-          {/* grid no 1 */}
+          
           <div className="bg-cart w-full flex flex-col justify-between items-center  sm:flex-row col-span-1  md:col-span-2 px-12">
             <div className="py-8 max-w-[13rem]">
               <h1 className="text-4xl font-bold">GET UP TO 60%</h1>
@@ -28,7 +28,7 @@ const Producttype = () => {
             </div>
           </div>
 
-          {/* grid no 2 */}
+          
 
           <div className="bg-cart3 w-full row-span-1 h-full md:row-span-2  flex flex-col items-center">
             <div className="p-4">
@@ -48,7 +48,7 @@ const Producttype = () => {
             </div>
           </div>
 
-          {/* grid no 3 */}
+    
 
           <div className="bg-cart w-full row-span-1 h-full md:row-span-2  flex flex-col items-center">
             <div className="p-4">
@@ -66,8 +66,7 @@ const Producttype = () => {
             </div>
           </div>
 
-          {/* grid no 4 */}
-
+        
           <div className="bg-cart2 w-full  md:col-span-2 col-auto text-white flex flex-col justify-center items-center space-y-3 py-9">
             <div>
               <h1 className="text-5xl font-bold">GET 30% Off</h1>
